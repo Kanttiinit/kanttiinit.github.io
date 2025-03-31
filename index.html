@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanttiinit, Story so far</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer data-domain="kanttiinit.github.io" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="kanttiinit.github.io" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
     <style>
         :root {
             --kanttiinit-green: #06cbb0;
@@ -128,7 +128,7 @@
                 </h1>
                 <p class="text-zinc-200 mb-6">
                     Help us build it. It's used by ten thousand students
-                    every week in the Greater Helsinki area.
+                    in the Greater Helsinki area.
                 </p>
                 <p class="text-zinc-200 mb-6">
                     Do you know <span class="accent-orange">Svelte</span>?
@@ -139,11 +139,13 @@
                     <span class="accent-green">OSM tileserver</span>?
                 </p>
                 <a href="https://github.com/Kanttiinit" target="_blank"
+                    onclick="plausible('kanttiinit-github')"
                     class="inline-block px-5 py-3 bg-green-500 hover:bg-green-400 text-black font-semibold rounded-lg transition"
                     style="background-color: var(--kanttiinit-green)">
-                    Join the project
+                    Clone the source
                 </a>
                 <a href="https://t.me/+zrcorCUwBW5iOTNk" target="_blank"
+                    onclick="plausible('kanttiinit-telegram')"
                     class="inline-block px-5 py-3 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold rounded-lg transition">
                     Chat with us
                 </a>
@@ -182,6 +184,7 @@ $ npx drink-coffee --with kanttiinit
                 In 2015, Otaniemi had no good website for finding the
                 tastiest lunch between all the different canteens. We built
                 it for our own use and shared the <a class="accent-blue text-link" href="https://kanttiinit.fi"
+                    onclick="plausible('kanttiinit-website')"
                     target="_blank">link</a> with our friends.
                 <br /><br />
                 It solved a problem we ran into every day — and others
@@ -191,6 +194,25 @@ $ npx drink-coffee --with kanttiinit
             <p class="leading-relaxed">
                 Fast forward to 2025, it's used by ten thousand students
                 every week.
+            </p>
+        </section>
+        <section class="text-zinc-300 space-y-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-zinc-100">
+                What You Can Get From Kanttiinit
+            </h2>
+            <p class="leading-relaxed">
+                By contributing to the project you can develop your portfolio, learn web development and maybe code with us.
+                And perhaps we can learn something from you. We're very open to mentoring junior developers who
+                want to learn while doing.
+            </p>
+            <p class="leading-relaxed">
+                We want to continue giving to the community and helping 
+                students, perhaps someday giving the project away to
+                the student union.
+            </p>
+            <p class="leading-relaxed font-bold">
+                We need help for supporting new restaurants, fixing parsers, maybe making some parsing more automagical,
+                polish the UX, fix bugs, imagine new features and take things forward.
             </p>
         </section>
         <section class="text-zinc-300 space-y-4">
@@ -241,24 +263,13 @@ $ npx drink-coffee --with kanttiinit
                     <a href="https://svelte.dev/" target="_blank" class="text-white text-link text-sm">SvelteKit</a>
                 </div>
             </div>
-        </section>
-        <section class="text-zinc-300 space-y-4">
-            <h2 class="text-2xl md:text-3xl font-semibold text-zinc-100">
-                What You Can Get From Kanttiinit
-            </h2>
             <p class="leading-relaxed">
-                By contributing to the project you can develop your portfolio, learn web development and maybe code with us.
-                And perhaps we can learn something from you. We're very open to mentoring junior developers who
-                want to learn while doing.
-            </p>
-            <p class="leading-relaxed">
-                We want to continue giving to the community and help 
-                students and perhaps someday give away the project to
-                the student union.
-            </p>
-            <p class="leading-relaxed font-bold">
-                We need help for supporting new restaurants, fixing parsers, maybe making some parsing more automagical,
-                polish the UX, fix bugs, imagine new features and take things forward.
+                We don't have a feature roadmap, but we're looking to modernise and simplify. Long term we're
+                looking to make the webapp more portable and perhaps serverless. And we always need more, and more robust,
+                menu parsers! 🤖
+                <br><br>
+                Making it easier to add new restaurants and canteens is a priority to support even more students,
+                even outside of the Greater Helsinki area.
             </p>
         </section>
         <section class="text-zinc-300 space-y-4">
@@ -270,8 +281,10 @@ $ npx drink-coffee --with kanttiinit
                     class="text-blue-400 text-link">web</a> repo for example. We're happy to help you get started.
                 <br><br>
                 Talk to us: join our <a href="https://t.me/+zrcorCUwBW5iOTNk" target="_blank"
+                    onclick="plausible('kanttiinit-telegram')"
                     class="text-blue-400 text-link">Telegram group</a>
                 or connect with us on <a href="https://github.com/orgs/Kanttiinit/people" target="_blank"
+                    onclick="plausible('kanttiinit-github')"
                     class="text-blue-400 text-link">GitHub</a> if that works for you.
             </p>
         </section>
@@ -305,7 +318,8 @@ $ npx drink-coffee --with kanttiinit
     <footer class="text-center text-zinc-400 mt-24 text-sm">
         <p>
             Made with ❤️ by
-            <a href="https://kanttiinit.fi" class="kanttiinit-green hover:underline">
+            <a href="https://kanttiinit.fi" class="kanttiinit-green hover:underline"
+                onclick="plausible('kanttiinit-website')" target="_blank">
                 Kanttiinit
                 <img src="./logo.png" height="24px" width="24px" style="
                             display: inline;
