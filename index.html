@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" class="bg-zinc-900 text-zinc-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanttiinit, Story so far</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer data-domain="kanttiinit.github.io" src="https://plausible.io/js/script.js"></script>
+    <style>
+        :root {
+            --kanttiinit-green: #06cbb0;
+            --kanttiinit-green-2: #0b8e72;
+        }
+
+        .kanttiinit-green {
+            color: var(--kanttiinit-green);
+        }
+
+        .kanttiinit-green-2 {
+            color: var(--kanttiinit-green-2);
+        }
+
+        .accent-orange {
+            color: #ff7e5f;
+        }
+
+        .accent-blue {
+            color: #3b82f6;
+        }
+
+        .accent-light-blue {
+            color: #93c5fd;
+        }
+
+        .accent-blue-gray {
+            color: #6b7280;
+        }
+
+        .accent-green {
+            color: #10b981;
+        }
+
+        a.text-link {
+            text-decoration: underline;
+        }
+
+        .typewriter>* {
+            opacity: 0;
+            white-space: pre;
+            overflow: hidden;
+        }
+
+        .typewriter>.line {
+            animation: type 1s steps(40, end) forwards;
+        }
+
+        .typewriter>.line:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .typewriter>.line:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .typewriter>.line:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        .typewriter>.line:nth-child(5) {
+            animation-delay: 4s;
+        }
+
+        @keyframes type {
+            from {
+                width: 0;
+                opacity: 1;
+            }
+
+            to {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        .xp-highlight {
+            background: linear-gradient(90deg, #0c90fd, #09bddd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .snazzy-text {
+            font-weight: 600;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, #54d3ff, #b990ff, #ffa6a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200%;
+            animation: gradientShift 4s ease infinite;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% center;
+            }
+
+            50% {
+                background-position: 100% center;
+            }
+
+            100% {
+                background-position: 0% center;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen font-mono bg-zinc-900 text-zinc-100 px-6 py-12">
+    <main class="max-w-4xl mx-auto space-y-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    <span class="snazzy-text text-4xl md:text-5xl font-bold">Kanttiinit is open source?</span>🤯
+                </h1>
+                <p class="text-zinc-200 mb-6">
+                    Help us build it. It's used by thousands of students
+                    every day in the Greater Helsinki area.
+                </p>
+                <p class="text-zinc-200 mb-6">
+                    Do you know <span class="accent-orange">Svelte</span>?
+                    Or maybe you're a
+                    <span class="accent-light-blue">React</span> wizard?
+                    Wanna learn <span class="accent-blue">Flutter</span>? Or
+                    build an
+                    <span class="accent-green">OSM tileserver</span>?
+                </p>
+                <a href="https://github.com/Kanttiinit" target="_blank"
+                    class="inline-block px-5 py-3 bg-green-500 hover:bg-green-400 text-black font-semibold rounded-lg transition"
+                    style="background-color: var(--kanttiinit-green)">
+                    Join the project
+                </a>
+                <a href="https://t.me/+zrcorCUwBW5iOTNk" target="_blank"
+                    class="inline-block px-5 py-3 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold rounded-lg transition">
+                    Chat with us
+                </a>
+            </div>
+
+            <div class="bg-zinc-800 rounded-xl p-4 shadow-lg text-sm leading-relaxed font-mono">
+                <div class="typewriter overflow-hidden">
+                    <div class="line text-green-400">
+$ npx drink-coffee --with kanttiinit
+                    </div>
+                    <div class="line text-zinc-300">
+☕ Drinking coffee with kanttiinit developers... ✅
+<span>Ready! Enjoy your productivity boost.</span>
+                    </div>
+                    <div class="line text-zinc-300">
+✔ Help build critical infra for students?<br /><span>› Yes</span>
+                    </div>
+                    <div class="line text-zinc-300">
+✔ Get mentored by professionals?<br /><span>› Yes</span>
+                    </div>
+                    <div class="line text-zinc-300">
+✔ Level up your coding <span class="xp-highlight">XP</span> by contributing?<br /><span>› Yes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="text-zinc-300 space-y-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-zinc-100">
+                The Story So Far
+            </h2>
+            <p class="leading-relaxed">
+                Wow, this is actually the first marketing that we've ever done.
+            </p>
+            <p class="leading-relaxed">
+                In 2015, Otaniemi had no good website for finding the
+                tastiest lunch between all the different canteens. We built
+                it for our own use and shared the <a class="accent-blue text-link" href="https://kanttiinit.fi"
+                    target="_blank">link</a> with our friends.
+                <br /><br />
+                It solved a problem we ran into every day — and others
+                noticed too. We always wanted it to be free and open source,
+                forever, and will keep it that way.
+            </p>
+            <p class="leading-relaxed">
+                Fast forward to 2025, it's used by thousands of students
+                every day.
+            </p>
+        </section>
+        <section class="text-zinc-300 space-y-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-zinc-100">
+                Tech Stack
+            </h2>
+            <p class="leading-relaxed">
+                It's a mix of different technologies. We have a trusty
+                <span class="accent-green">NodeJS</span> backend, a
+                <span class="accent-blue-gray">PostgreSQL</span> database,
+                and a <span class="accent-blue">SolidJS</span> frontend.
+            </p>
+            <p class="leading-relaxed">
+                We've always chosen the tech that is relevant and that we
+                want to learn. If you want to have an excuse to learn
+                something new, pick what you want to learn and start
+                hacking. You can contact us if you need help or mentoring.
+            </p>
+            <p class="leading-relaxed">
+                <span class="accent-orange">SvelteKit</span> and static
+                (pre)rendering is something we are playing with to learn and
+                maybe modernise our app, if only we had time...
+            </p>
+            <div class="grid grid-cols-3 gap-6 max-w-md mx-auto p-6 rounded-2xl">
+                <div class="flex flex-col items-center">
+                    <img src="https://www.solidjs.com/img/logo/without-wordmark/logo.svg" alt="SolidJS"
+                        class="h-12 mb-2" />
+                    <a href="https://www.solidjs.com/" target="_blank" class="text-white text-link text-sm">SolidJS</a>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                        alt="PostgreSQL" class="h-12 mb-2" />
+                    <a href="https://www.postgresql.org/" target="_blank"
+                        class="text-white text-link text-sm">PostgreSQL</a>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/NodeJS.png?20130122160021"
+                        alt="NodeJS" class="h-12 mb-2" />
+                    <a href="https://nodejs.org/en" target="_blank" class="text-white text-link text-sm">NodeJS</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-6 max-w-md mx-auto p-6 rounded-2xl">
+                <div class="flex flex-col items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/996px-Svelte_Logo.svg.png"
+                        alt="SvelteKit" class="h-12 mb-2" />
+                    <a href="https://svelte.dev/" target="_blank" class="text-white text-link text-sm">SvelteKit</a>
+                </div>
+            </div>
+        </section>
+        <section class="text-zinc-300 space-y-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-zinc-100">
+                The Team
+            </h2>
+            <p class="leading-relaxed">
+                Together we have over 40 years of coding experience (no cap,
+                👴) from startups and slightly bigger companies,
+                both outside and inside Finland. Sprinkled with some
+                experience from hackathons etc, also winning some...
+            </p>
+            <p class="leading-relaxed">
+                Our backgrounds are in Aalto University, studying
+                <span class="text-blue-300">Computer Science</span>
+                and
+                <span class="text-red-300">Information Networks</span>
+                with some
+                <span class="text-yellow-300">Arts</span> apparently in
+                there as well.
+            </p>
+            <p class="leading-relaxed">
+                We've all graduated, in one way or another, and are in the
+                industry now. We've been working on this project for long
+                and don't want to see it die, but also don't really have
+                time to work on it.
+            </p>
+        </section>
+        <section class="text-zinc-300 space-y-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-zinc-100">
+                What You Can Get
+            </h2>
+            <p class="leading-relaxed">
+                By contributing to the project you can develop your portfolio, learn web development and maybe code with us.
+                And perhaps we can learn something from you. We're very open to mentoring junior developers who
+                want to learn while doing.
+            </p>
+            <p class="leading-relaxed">
+                We want to continue giving to the community and help like-minded
+                students and perhaps someday give away the project to
+                the student union or something if nothing else works.
+            </p>
+            <p class="leading-relaxed font-bold">
+                We need help for supporting new restaurants, fixing parsers, maybe making some parsing more automagical,
+                polish the UX, fix bugs, imagine new features.
+                <br> <br>
+                Talk to us: join our <a href="https://t.me/+zrcorCUwBW5iOTNk" target="_blank"
+                    class="text-blue-400 text-link">Telegram group</a>
+                or connect with us on <a href="https://github.com/orgs/Kanttiinit/people" target="_blank"
+                    class="text-blue-400 text-link">GitHub</a> if that works for you.
+            </p>
+        </section>
+    </main>
+
+    <footer class="text-center text-zinc-400 mt-24 text-sm">
+        <p>
+            Made with ❤️ by
+            <a href="https://kanttiinit.fi" class="kanttiinit-green hover:underline">
+                Kanttiinit
+                <img src="./logo.png" height="24px" width="24px" style="
+                            display: inline;
+                            margin-bottom: 4px;
+                            margin-left: -6px;
+                        " />
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
